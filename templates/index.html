@@ -1,0 +1,32 @@
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<html>
+<title>Er det alvor?</title>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
+        nonce="1of2LpcJ"></script>
+    <div class="center">
+
+        <h1>Ja!</h1> <br>
+        <h5>Vis hensyn, følg smittevernsrådene. </h5>
+
+    </div>
+
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
+        data-text="Jeg synes også det er alvor!" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <div class="fb-share-button" data-href="http://erdetalvor.no/" data-layout="button_count" data-size="large"><a
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ferdetalvor.no%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore">Share</a></div>
+</body>
+
+
+</html>
+{% endblock %}
